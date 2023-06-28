@@ -1,0 +1,208 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --poppins: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #191f24;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.player {
+
+  background-color: #10100e;
+  border-radius: 20px;
+
+  width: 390px;
+  height: 760px;
+}
+
+.player-album-image {
+  background: url(images/HollywoodsBleeding.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  width: 390px;
+  height: 496px;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  color: white;
+  transform: translateY(-40px);
+
+  width: 390px;
+  height: 260px;
+}
+
+.player-title {
+  font-family: var(--poppins);
+  font-size: 32px;
+  color: #CDCDCD;
+  margin-bottom: -3px;
+}
+
+.player-artist-name {
+  font-family: var(--poppins);
+  font-size: 24px;
+  color: #9CA5AF;
+}
+
+.music-time {
+  font-family: var(--poppins);
+  font-size: 14px;
+  color: #9CA5AF;
+}
+
+.barrs {
+  display: flex;
+  align-items: flex-end;
+  justify-content: start;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.bar {
+  position: absolute;
+
+  width: 60px;
+  height: 56px;
+}
+
+#bar1 {
+  background: linear-gradient(to right, #10100e, #0000000e);
+}
+
+#bar2 {
+  background: linear-gradient(to left, #10100e, #0000000e);
+}
+
+.main-navigation {
+  margin-top: 30px;
+}
+
+/* range time config */
+
+.range-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 390px;
+}
+
+#music-range {
+
+  border-radius: 50px;
+
+  width: 354px;
+  height: 4px;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 5px;
+
+  width: 354px;
+}
+
+/* navigation buttons config */
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 390px;
+  height: auto;
+}
+
+.repeat-button, .youtube-mv-button {
+  font-size: 23px;
+
+  cursor: pointer;
+
+  width: 26px;
+  height: 26px;
+}
+
+.backward-step-button, .forward-step-button {
+  font-size: 40px;
+
+  cursor: pointer;
+
+  width: 25px;
+  height: 40px;
+}
+
+.play-button {
+  border-radius: 50%;
+  border: 1px solid #3A5766;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 79px;
+  height: 79px;
+}
+
+.ball {
+  background: linear-gradient(7deg, #253037, #3A5766), 
+  linear-gradient(17deg, #496D7A, #3A5766),
+  linear-gradient(42deg, #2B4048, #3A5766);
+
+  border-radius: 50%;
+  position: absolute;
+
+  filter: blur(2px);
+
+  width: 78px;
+  height: 78px;
+}
+
+.fa-play {
+  position: absolute;
+  font-size: 40px;
+}
+
+.fa-pause {
+  position: absolute;
+  font-size: 40px;
+}

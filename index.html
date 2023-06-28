@@ -4,11 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/70232b4b24.js" crossorigin="anonymous"></script>
   <title>Music Player</title>
 </head>
 <body>
 
+  <div class="player">
+
+    <div class="player-album-image">
+
+    </div>
+
+    <div class="main">
   
+      <div class="player-title">Circles</div>
+      <div class="player-artist-name">Post Malone</div>
   
+      <div class="main-navigation">
+        
+        <!-- Range Time -->
+        <div class="barrs">
+          <div class="bar" id="bar1"></div>
+          <div class="bars">
+            <div class="range-time">
+              <input type="range" name="music-range" id="music-range" min="1" max="100" value="36">
+          
+              <div class="time">
+                <div class="music-time" id="music-current-time">0:55</div>
+                <div class="music-time" id="music-total-time">3:35</div>
+              </div>
+            </div>
+            <div class="bar" id="bar2"></div>
+          </div>
+        </div>
+        
+        <!-- Navigation Buttons-->
+        <div class="navigation-buttons">
+
+          <div class="repeat-button">
+            <i class="fa-solid fa-repeat" style="color: #ffffff;"></i>
+          </div>
+
+          <div class="backward-step-button">
+            <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
+          </div>
+
+          <div class="play-button">
+            <div class="ball"></div>
+            <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-pause" style="color: #ffffff; display: none;"></i>
+          </div>
+
+          <div class="forward-step-button">
+            <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+          </div>
+
+          <div class="youtube-mv-button">
+            <i class="fa-brands fa-youtube" style="color: #b52c2c;"></i>
+          </div>
+
+        </div>
+      
+      </div>
+
+    </div>
+
+  </div>
+
 </body>
 </html>
