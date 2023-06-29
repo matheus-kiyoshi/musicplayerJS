@@ -148,8 +148,9 @@ html, body {
   height: auto;
 }
 
-.repeat-button, .youtube-mv-button {
+.repeat-button, .shuffle-button {
   font-size: 23px;
+  opacity: 0.5;
 
   cursor: pointer;
 
@@ -237,8 +238,8 @@ html, body {
 /* waves */
 
 #wave {
-  transform: translateY(35px);
-  height: 5px;
+  transform: translateY(25px);
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
