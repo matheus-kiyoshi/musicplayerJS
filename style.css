@@ -158,6 +158,13 @@ html, body {
   height: 26px;
 }
 
+.repeat-button:active, .shuffle-button:active {
+  font-size: 20px;
+  
+  width: 23px;
+  height: 23px;
+}
+
 .backward-step-button, .forward-step-button {
   font-size: 40px;
 
@@ -165,6 +172,13 @@ html, body {
 
   width: 25px;
   height: 40px;
+}
+
+.backward-step-button:active, .forward-step-button:active {
+  font-size: 35px;
+
+  width: 23px;
+  height: 35px;
 }
 
 .play-button {
@@ -181,6 +195,11 @@ html, body {
   height: 79px;
 }
 
+.play-button:active {
+  width: 76px;
+  height: 76px;
+}
+
 .ball {
   background: linear-gradient(7deg, #253037, #3A5766), 
   linear-gradient(17deg, #496D7A, #3A5766),
@@ -195,6 +214,11 @@ html, body {
   height: 78px;
 }
 
+.ball:active {
+  width: 75px;
+  height: 75px;
+}
+
 .fa-play {
   position: absolute;
   font-size: 40px;
@@ -203,6 +227,10 @@ html, body {
 .fa-pause {
   position: absolute;
   font-size: 40px;
+}
+
+.fa-play:active, .fa-pause:active {
+  font-size: 37px;
 }
 
 /* Range visual */
