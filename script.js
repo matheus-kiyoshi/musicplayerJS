@@ -3,9 +3,6 @@ let trackName = document.querySelector('.player-title');
 let trackArtist = document.querySelector('.player-artist-name');
 
 let repeatBtn = document.querySelector('.repeat-button');
-let backwardBtn = document.querySelector('.backward-step-button');
-let forwardBtn = document.querySelector('.forward-step-button');
-let playPauseBtn = document.querySelector('.play-button');
 let pauseBtn = document.querySelector('.fa-pause');
 let playBtn = document.querySelector('.fa-play');
 let randomBtn = document.querySelector('.shuffle-button');
