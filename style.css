@@ -62,25 +62,6 @@ html, body {
   font-size: 14px;
 }
 
-.barrs {
-  display: flex;
-  align-items: flex-end;
-  justify-content: start;
-}
-
-.bars {
-  display: flex;
-  align-items: flex-end;
-  justify-content: end;
-}
-
-.bar {
-  position: absolute;
-
-  width: 60px;
-  height: 56px;
-}
-
 .main-navigation {
   margin-top: 30px;
 }
@@ -335,14 +316,6 @@ html, body {
   color: #9CA5AF;
 }
 
-#holybleed1 {
-  background: linear-gradient(to right, black, #0000000e);
-}
-
-#holybleed2 {
-  background: linear-gradient(to left, black, #0000000e);
-}
-
 /* ===============================
        FOLKLORE - BETTY */
 
@@ -380,14 +353,6 @@ html, body {
   color: white;
 }
 
-#betty1 {
-  background: linear-gradient(to right, #929292, #00000000);
-}
-
-#betty2 {
-  background: linear-gradient(to left, #929292, #00000000);
-}
-
 /* ==================================
     HAPPIER THAN EVER - BILLIE  */
 
@@ -423,14 +388,6 @@ html, body {
 
 .time#hte {
   color: #dbc0a7;
-}
-
-#hte1 {
-  background: linear-gradient(to right, #906D4D, #00000000);
-}
-
-#hte2 {
-  background: linear-gradient(to left, #906D4D, #00000000);
 }
 
 /* ==================================
@@ -471,14 +428,6 @@ html, body {
   color: #CDCDCD;
 }
 
-#sot1 {
-  background: linear-gradient(to right, #6ADB7F, #00000000);
-}
-
-#sot2 {
-  background: linear-gradient(to left, #6ADB7F, #00000000);
-}
-
 /* ==================================
       STARBOY - THE WEEKND */
 
@@ -513,14 +462,6 @@ html, body {
 
 .time#starboy {
   color: #CDCDCD;
-}
-
-#starboy1 {
-  background: linear-gradient(to right, #CC0026, #00000000);
-}
-
-#starboy2 {
-  background: linear-gradient(to left, #CC0026, #00000000);
 }
 
 /* ==================================
@@ -560,14 +501,6 @@ html, body {
 .time#nfr {
   color: #CDCDCD;
 }
-
-#nfr1 {
-  background: linear-gradient(to right, #b10e2c, #00000000);
-}
-
-#nfr2 {
-  background: linear-gradient(to left, #b10e2c, #00000000);
-}
       
 /* ==================================
       MELODRAMA - LORDE */
@@ -594,7 +527,6 @@ html, body {
   height: 496px;
 }
 
-
 .player-title#melodrama {
   color: #ececec;
 }
@@ -605,12 +537,4 @@ html, body {
 
 .time#melodrama {
   color: #CDCDCD;
-}
-
-#melodrama1 {
-  background: linear-gradient(to right, #0C4AAF, #00000000);
-}
-
-#melodrama2 {
-  background: linear-gradient(to left, #0C4AAF, #00000000);
 }

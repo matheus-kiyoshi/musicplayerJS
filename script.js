@@ -3,8 +3,6 @@ let trackName = document.querySelector('.player-title');
 let trackArtist = document.querySelector('.player-artist-name');
 
 let player = document.querySelector('.player');
-let bar1 = document.querySelector('.barra1');
-let bar2 = document.querySelector('.barra2');
 let divTime = document.querySelector('.time');
 
 let repeatBtn = document.querySelector('.repeat-button');
@@ -116,8 +114,6 @@ function background(trackIndex) {
   trackName.id = musics[trackIndex].ident;
   trackArtist.id = musics[trackIndex].ident;
   divTime.id = musics[trackIndex].ident;
-  bar1.id = musics[trackIndex].ident;
-  bar2.id = musics[trackIndex].ident;
   musicSlider.style.backgroundColor = musics[trackIndex].color;
 } 
 
@@ -179,6 +175,12 @@ function nextTrack() {
   if (trackIndex < musics.length - 1 && isRandom === false && isInRepeat === false) {
     trackIndex += 1;
   } else if (trackIndex < musics.length - 1 && isRandom === true && isInRepeat === false) {
+    let randomIndex = Number.parseInt(Math.random() * musics.length);
+    while (randomIndex === trackIndex) {
+      randomIndex = Number.parseInt(Math.random() * musics.length);
+    }
+    trackIndex = randomIndex;
+  } else if (trackIndex === musics.length - 1 && isRandom === true && isInRepeat === false) {
     let randomIndex = Number.parseInt(Math.random() * musics.length);
     while (randomIndex === trackIndex) {
       randomIndex = Number.parseInt(Math.random() * musics.length);
