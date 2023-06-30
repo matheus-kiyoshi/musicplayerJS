@@ -8,8 +8,8 @@
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [Feito Com](#feito-com)
+  - [O que aprendi](#o-que-aprendi)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
