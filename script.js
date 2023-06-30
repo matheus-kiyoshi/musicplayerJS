@@ -2,6 +2,11 @@ let trackArt = document.querySelector('.player-album-image');
 let trackName = document.querySelector('.player-title');
 let trackArtist = document.querySelector('.player-artist-name');
 
+let player = document.querySelector('.player');
+let bar1 = document.querySelector('.barra1');
+let bar2 = document.querySelector('.barra2');
+let divTime = document.querySelector('.time');
+
 let repeatBtn = document.querySelector('.repeat-button');
 let pauseBtn = document.querySelector('.fa-pause');
 let playBtn = document.querySelector('.fa-play');
@@ -26,42 +31,56 @@ const musics = [
     title: "Circles",
     artist: "Post Malone",
     image: "images/HollywoodsBleeding.jpg",
+    ident: "holybleed",
+    color: "rgb(68, 68, 68)",
   },
   {
     source: "src/betty.mp3",
     title: "betty",
     artist: "Taylor Swift",
     image: "images/folklore.jpg",
+    ident: "betty",
+    color: "rgb(68, 68, 68)",
   },
   {
     source: "src/LostCause.mp3",
     title: "Lost Cause",
     artist: "Billie Eillish",
     image: "images/hte.jpg",
+    ident: "hte",
+    color: "#906D4D",
   },
   {
     source: "src/SongOfTime.mp3",
     title: "Song Of Time",
     artist: "Less Gravity",
     image: "images/sot.jpg",
+    ident: "sot",
+    color: "rgb(52, 100, 46)",
   },
   {
     source: "src/Starboy.mp3",
     title: "Starboy",
     artist: "The Weeknd",
     image: "images/Starboy.png",
+    ident: "starboy",
+    color: "#4d000e",
   },
   {
     source: "src/happinessisabutterfly.mp3",
     title: "Happiness is a butterfly",
     artist: "Lana Del Rey",
     image: "images/nfr.png",
+    ident: "nfr",
+    color: "#800d22",
   },
   {
     source: "src/Supercut.mp3",
     title: "Supercut",
     artist: "Lorde",
     image: "images/melodrama.webp",
+    ident: "melodrama",
+    color: "#0a3b8b",
   },
 ];
 
@@ -75,9 +94,9 @@ function loadTrack(trackIndex) {
   currentTrack.load();
   currentTrack.volume = 0.5;
 
-  trackArt.style.backgroundImage = "url(" + musics[trackIndex].image + ")";
   trackName.textContent = musics[trackIndex].title;
   trackArtist.textContent = musics[trackIndex].artist;
+  background(trackIndex);
   
   updateTimer = setInterval(setUpdate, 1000);
 
@@ -89,6 +108,18 @@ function reset() {
   totalTime.textContent = '00:00';
   musicSlider.value = 0;
 }
+
+function background(trackIndex) {
+  trackArt.style.backgroundImage = "url(" + musics[trackIndex].image + ")";
+  player.id = musics[trackIndex].ident;
+  trackArt.id = musics[trackIndex].ident;
+  trackName.id = musics[trackIndex].ident;
+  trackArtist.id = musics[trackIndex].ident;
+  divTime.id = musics[trackIndex].ident;
+  bar1.id = musics[trackIndex].ident;
+  bar2.id = musics[trackIndex].ident;
+  musicSlider.style.backgroundColor = musics[trackIndex].color;
+} 
 
 function playTrack() {
   currentTrack.play();
@@ -132,7 +163,9 @@ function repeatTrack() {
 }
 
 function prevTrack() {  
-  trackIndex > 0 ? trackIndex -= 1 : trackIndex = musics.length - 1;
+  if (isInRepeat === false) {
+    trackIndex > 0 ? trackIndex -= 1 : trackIndex = musics.length - 1;
+  }
 
   loadTrack(trackIndex);
   playTrack();
@@ -151,9 +184,9 @@ function nextTrack() {
       randomIndex = Number.parseInt(Math.random() * musics.length);
     }
     trackIndex = randomIndex;
-  } else if (trackIndex < musics.length - 1 && isRandom === false && isInRepeat === true) {
+  } else if (trackIndex < musics.length - 1 && isInRepeat === true) {
     trackIndex = trackIndex;
-  } else if (trackIndex < musics.length - 1 && isRandom === true && isInRepeat === true) {
+  } else if (trackIndex === musics.length - 1 && isInRepeat === true) {
     trackIndex = trackIndex;
   } else {
     trackIndex = 0;

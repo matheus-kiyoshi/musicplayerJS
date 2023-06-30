@@ -26,30 +26,10 @@ html, body {
 }
 
 .player {
-  background-color: black;
   border-radius: 20px;
-  box-shadow: 
-    -1px -1px 10px rgba(0, 0, 0, 0.418),
-    1px 1px 10px rgba(0, 0, 0, 0.377);
 
   width: 390px;
   height: 780px;
-}
-
-.player-album-image {
-  background: url(images/HollywoodsBleeding.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  box-shadow: 
-  inset 0 -75px 50px 17px rgba(0, 0, 0),
-  inset 0 0 50px 17px rgba(0, 0, 0);
-
-  width: 390px;
-  height: 496px;
 }
 
 
@@ -69,20 +49,17 @@ html, body {
 .player-title {
   font-family: var(--poppins);
   font-size: 32px;
-  color: #CDCDCD;
   margin-bottom: -3px;
 }
 
 .player-artist-name {
   font-family: var(--poppins);
   font-size: 24px;
-  color: #9CA5AF;
 }
 
 .music-time {
   font-family: var(--poppins);
   font-size: 14px;
-  color: #9CA5AF;
 }
 
 .barrs {
@@ -102,14 +79,6 @@ html, body {
 
   width: 60px;
   height: 56px;
-}
-
-#bar1 {
-  background: linear-gradient(to right, black, #0000000e);
-}
-
-#bar2 {
-  background: linear-gradient(to left, black, #0000000e);
 }
 
 .main-navigation {
@@ -328,4 +297,320 @@ html, body {
 }
 .stroke:nth-child(7){
     animation-delay: 0.7s;
+}
+
+/* HOLLYWOOD'S BLEEDING */
+
+.player#holybleed {
+  background-color: black;
+  box-shadow: 
+    -1px -1px 10px rgba(0, 0, 0, 0.418),
+    1px 1px 10px rgba(0, 0, 0, 0.377);
+}
+
+.player-album-image#holybleed {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 
+    inset 0 -33px 50px 17px rgba(0, 0, 0),
+    inset 0 0 50px 17px rgba(0, 0, 0);
+
+  width: 390px;
+  height: 496px;
+}
+
+.player-title#holybleed {
+  color: #CDCDCD;
+}
+
+.player-artist-name#holybleed {
+  color: #9CA5AF;
+}
+
+.time#holybleed {
+  color: #9CA5AF;
+}
+
+#holybleed1 {
+  background: linear-gradient(to right, black, #0000000e);
+}
+
+#holybleed2 {
+  background: linear-gradient(to left, black, #0000000e);
+}
+
+/* ===============================
+       FOLKLORE - BETTY */
+
+.player#betty {
+  background-color: #929292;
+  box-shadow: 
+    -1px -1px 10px #4d4d4d,
+    1px 1px 10px #4d4d4d;
+}
+
+.player-album-image#betty {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 
+    inset 0 -33px 50px 17px #929292,
+    inset 0 0 50px 17px #929292;
+  
+  width: 390px;
+  height: 496px;
+}
+
+.player-title#betty {
+  color: #191f24;
+}
+
+.player-artist-name#betty {
+  color: #4d4d4d;
+}
+
+.time#betty {
+  color: white;
+}
+
+#betty1 {
+  background: linear-gradient(to right, #929292, #00000000);
+}
+
+#betty2 {
+  background: linear-gradient(to left, #929292, #00000000);
+}
+
+/* ==================================
+    HAPPIER THAN EVER - BILLIE  */
+
+.player#hte {
+  background-color: #906D4D;
+  box-shadow: 
+    -1px -1px 10px #906D4D,
+    1px 1px 10px #906D4D;
+}
+
+.player-album-image#hte {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 
+    inset 0 -33px 50px 17px #906D4D,
+    inset 0 0 50px 17px #906D4D;
+
+  width: 390px;
+  height: 496px;
+}
+
+.player-title#hte {
+  color: #dbc0a7;
+}
+
+.player-artist-name#hte {
+  color: #5f4023;
+}
+
+.time#hte {
+  color: #dbc0a7;
+}
+
+#hte1 {
+  background: linear-gradient(to right, #906D4D, #00000000);
+}
+
+#hte2 {
+  background: linear-gradient(to left, #906D4D, #00000000);
+}
+
+/* ==================================
+      SONG OF TIME - LESS */
+
+.player#sot {
+  background-color: #6ADB7F;
+  box-shadow: 
+    -1px -1px 10px #6ADB7F,
+    1px 1px 10px #6ADB7F;
+}
+
+.player-album-image#sot {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 
+    inset 0 -33px 50px 17px #6ADB7F,
+    inset 0 0 50px 17px #6ADB7F;
+
+  width: 390px;
+  height: 496px;
+  
+}
+
+.player-title#sot {
+  color: #ececec;
+}
+
+.player-artist-name#sot {
+  color: #CDCDCD;
+}
+
+.time#sot {
+  color: #CDCDCD;
+}
+
+#sot1 {
+  background: linear-gradient(to right, #6ADB7F, #00000000);
+}
+
+#sot2 {
+  background: linear-gradient(to left, #6ADB7F, #00000000);
+}
+
+/* ==================================
+      STARBOY - THE WEEKND */
+
+.player#starboy {
+  background-color: #CC0026;
+  box-shadow: 
+    -1px -1px 10px #e00029ce,
+    1px 1px 10px #e00029ce;
+}
+.player-album-image#starboy {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 
+    inset 0 -33px 50px 17px #e00029ce,
+    inset 0 0 50px 17px #e00029ce;
+  
+  width: 390px;
+  height: 496px;
+}
+
+.player-title#starboy {
+  color: #ececec;
+}
+
+.player-artist-name#starboy {
+  color: #CDCDCD;
+}
+
+.time#starboy {
+  color: #CDCDCD;
+}
+
+#starboy1 {
+  background: linear-gradient(to right, #CC0026, #00000000);
+}
+
+#starboy2 {
+  background: linear-gradient(to left, #CC0026, #00000000);
+}
+
+/* ==================================
+      HAPPINES IS A BUTTERFLY - Lizzy */
+
+.player#nfr {
+  background-color: #b10e2c;
+  box-shadow: 
+    -1px -1px 10px #91031d,
+    1px 1px 10px #91031d;
+}
+
+.player-album-image#nfr {
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 
+    inset 0 -33px 50px 17px #b10e2c,
+    inset 0 0 50px 17px #b10e2c;
+
+  width: 390px;
+  height: 496px;
+}
+
+.player-title#nfr {
+  color: #ececec;
+}
+
+.player-artist-name#nfr {
+  color: #CDCDCD;
+}
+
+.time#nfr {
+  color: #CDCDCD;
+}
+
+#nfr1 {
+  background: linear-gradient(to right, #b10e2c, #00000000);
+}
+
+#nfr2 {
+  background: linear-gradient(to left, #b10e2c, #00000000);
+}
+      
+/* ==================================
+      MELODRAMA - LORDE */
+
+.player#melodrama {
+  background-color: #0C4AAF;
+  box-shadow: 
+    -1px -1px 10px #0a43a0,
+    1px 1px 10px #0a48ad;
+}
+
+.player-album-image#melodrama {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 
+    inset 0 -33px 50px 17px #0C4AAF,
+    inset 0 0 50px 17px #0C4AAF;
+  
+  width: 390px;
+  height: 496px;
+}
+
+
+.player-title#melodrama {
+  color: #ececec;
+}
+
+.player-artist-name#melodrama {
+  color: #CDCDCD;
+}
+
+.time#melodrama {
+  color: #CDCDCD;
+}
+
+#melodrama1 {
+  background: linear-gradient(to right, #0C4AAF, #00000000);
+}
+
+#melodrama2 {
+  background: linear-gradient(to left, #0C4AAF, #00000000);
 }
