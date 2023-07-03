@@ -24,7 +24,7 @@
         
         <!-- Range Time -->
         <div class="range-time">
-          <input type="range" name="music-range" id="music-range" min="1" max="100" value="0" onchange="slider()">
+          <input type="range" name="music-range" id="music-range" min="1" max="100" value="0">
           
           <div class="time" id="holybleed">
             <div class="music-time" id="music-current-time">0:55</div>
@@ -34,25 +34,25 @@
         <!-- Navigation Buttons-->
         <div class="navigation-buttons">
 
-          <div class="repeat-button" onclick="repeatTrack()">
+          <div class="repeat-button">
             <i class="fa-solid fa-repeat" style="color: #ffffff;"></i>
           </div>
 
-          <div class="backward-step-button" onclick="prevTrack()">
+          <div class="backward-step-button">
             <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
           </div>
 
-          <div class="play-button" onclick="playOrPauseTrack()">
+          <div class="play-button">
             <div class="ball"></div>
             <i class="fa-solid fa-play" style="color: #ffffff;"></i>
             <i class="fa-solid fa-pause" style="color: #ffffff; display: none;"></i>
           </div>
 
-          <div class="forward-step-button" onclick="nextTrack()">
+          <div class="forward-step-button">
             <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
           </div>
 
-          <div class="shuffle-button" onclick="randomTrack()">
+          <div class="shuffle-button">
             <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
           </div>
       
@@ -74,7 +74,7 @@
 
   </div>
   
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
 
 </body>
 </html>

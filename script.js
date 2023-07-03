@@ -1,21 +1,24 @@
-let trackArt = document.querySelector('.player-album-image');
-let trackName = document.querySelector('.player-title');
-let trackArtist = document.querySelector('.player-artist-name');
+const trackArt = document.querySelector('.player-album-image');
+const trackName = document.querySelector('.player-title');
+const trackArtist = document.querySelector('.player-artist-name');
 
-let player = document.querySelector('.player');
-let divTime = document.querySelector('.time');
+const player = document.querySelector('.player');
+const divTime = document.querySelector('.time');
 
-let repeatBtn = document.querySelector('.repeat-button');
-let pauseBtn = document.querySelector('.fa-pause');
-let playBtn = document.querySelector('.fa-play');
-let randomBtn = document.querySelector('.shuffle-button');
+const repeatBtn = document.querySelector('.repeat-button');
+const pauseBtn = document.querySelector('.fa-pause');
+const playBtn = document.querySelector('.fa-play');
+const randomBtn = document.querySelector('.shuffle-button');
+const backWardBtn = document.querySelector('.backward-step-button');
+const forWardBtn = document.querySelector('.forward-step-button');
+const play = document.querySelector('.play-button');
 
-let musicSlider = document.querySelector('#music-range');
-let currentTime = document.querySelector('#music-current-time');
-let totalTime = document.querySelector('#music-total-time');
-let wave = document.querySelector('#wave');
-let randomIcon = document.querySelector('.fa-shuffle');
-let currentTrack = document.createElement('audio');
+const musicSlider = document.querySelector('#music-range');
+const currentTime = document.querySelector('#music-current-time');
+const totalTime = document.querySelector('#music-total-time');
+const wave = document.querySelector('#wave');
+const randomIcon = document.querySelector('.fa-shuffle');
+const currentTrack = document.createElement('audio');
 
 let trackIndex = 0;
 let isPlaying = false;
@@ -23,64 +26,14 @@ let isRandom = false;
 let isInRepeat = false;
 let updateTimer;
 
-const musics = [
-  {
-    source: "src/Circles.mp3",
-    title: "Circles",
-    artist: "Post Malone",
-    image: "images/HollywoodsBleeding.jpg",
-    ident: "holybleed",
-    color: "rgb(68, 68, 68)",
-  },
-  {
-    source: "src/betty.mp3",
-    title: "betty",
-    artist: "Taylor Swift",
-    image: "images/folklore.jpg",
-    ident: "betty",
-    color: "rgb(68, 68, 68)",
-  },
-  {
-    source: "src/LostCause.mp3",
-    title: "Lost Cause",
-    artist: "Billie Eillish",
-    image: "images/hte.jpg",
-    ident: "hte",
-    color: "#906D4D",
-  },
-  {
-    source: "src/SongOfTime.mp3",
-    title: "Song Of Time",
-    artist: "Less Gravity",
-    image: "images/sot.jpg",
-    ident: "sot",
-    color: "rgb(52, 100, 46)",
-  },
-  {
-    source: "src/Starboy.mp3",
-    title: "Starboy",
-    artist: "The Weeknd",
-    image: "images/Starboy.png",
-    ident: "starboy",
-    color: "#4d000e",
-  },
-  {
-    source: "src/happinessisabutterfly.mp3",
-    title: "Happiness is a butterfly",
-    artist: "Lana Del Rey",
-    image: "images/nfr.png",
-    ident: "nfr",
-    color: "#800d22",
-  },
-  {
-    source: "src/Supercut.mp3",
-    title: "Supercut",
-    artist: "Lorde",
-    image: "images/melodrama.webp",
-    ident: "melodrama",
-    color: "#0a3b8b",
-  },
-];
+repeatBtn.addEventListener('click', repeatTrack);
+backWardBtn.addEventListener('click', prevTrack);
+forWardBtn.addEventListener('click', nextTrack);
+play.addEventListener('click', playOrPauseTrack);
+randomBtn.addEventListener('click', randomTrack);
+musicSlider.addEventListener('change', slider);
+
+import { musics } from "./songs.js";
 
 loadTrack(trackIndex);
 
@@ -145,9 +98,6 @@ function pauseRandom() {
   randomBtn.style.opacity = '0.5';
 }
 
-// HTML events
-
-
 function repeatTrack() {
   if (isInRepeat === false) {
     isInRepeat = true;
@@ -206,10 +156,6 @@ function slider() {
   let slider = currentTrack.duration * (musicSlider.value / 100);
   currentTrack.currentTime = slider;
 }
-
-
-// ------------------
-
 
 function setUpdate() {
   let sliderPosition = 0;
