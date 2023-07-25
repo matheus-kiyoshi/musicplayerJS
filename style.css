@@ -113,6 +113,8 @@ html, body {
   
   width: 23px;
   height: 23px;
+
+  transition: 0.5s;
 }
 
 .backward-step-button, .forward-step-button {
@@ -129,6 +131,8 @@ html, body {
 
   width: 23px;
   height: 35px;
+
+  transition: 0.5s;
 }
 
 .play-button {
@@ -148,6 +152,8 @@ html, body {
 .play-button:active {
   width: 76px;
   height: 76px;
+
+  transition: 0.5s;
 }
 
 .ball {
@@ -167,6 +173,8 @@ html, body {
 .ball:active {
   width: 75px;
   height: 75px;
+
+  transition: 0.5s;
 }
 
 .fa-play {
@@ -181,6 +189,8 @@ html, body {
 
 .fa-play:active, .fa-pause:active {
   font-size: 37px;
+
+  transition: 0.5s;
 }
 
 /* Range visual */
@@ -197,6 +207,8 @@ html, body {
 
   width: 354px;
   height: 7px;
+
+  transition: 2s;
 }
 
 #music-range::-webkit-slider-thumb {
@@ -211,6 +223,8 @@ html, body {
 
   width: 10px;
   height: 10px;
+  
+  transition: 2s;
 }
 
 /* waves */
@@ -287,6 +301,8 @@ html, body {
   box-shadow: 
     -1px -1px 10px rgba(0, 0, 0, 0.418),
     1px 1px 10px rgba(0, 0, 0, 0.377);
+
+    transition: 2s;
 }
 
 .player-album-image#holybleed {
@@ -302,18 +318,26 @@ html, body {
 
   width: 390px;
   height: 496px;
+
+  transition: 2s;
 }
 
 .player-title#holybleed {
   color: #CDCDCD;
+
+  transition: 2s;
 }
 
 .player-artist-name#holybleed {
   color: #9CA5AF;
+
+  transition: 2s;
 }
 
 .time#holybleed {
   color: #9CA5AF;
+
+  transition: 2s;
 }
 
 /* ===============================
@@ -324,6 +348,8 @@ html, body {
   box-shadow: 
     -1px -1px 10px #4d4d4d,
     1px 1px 10px #4d4d4d;
+
+    transition: 2s;
 }
 
 .player-album-image#betty {
@@ -339,18 +365,26 @@ html, body {
   
   width: 390px;
   height: 496px;
+
+  transition: 2s;
 }
 
 .player-title#betty {
   color: #191f24;
+
+  transition: 2s;
 }
 
 .player-artist-name#betty {
   color: #4d4d4d;
+
+  transition: 2s;
 }
 
 .time#betty {
   color: white;
+
+  transition: 2s;
 }
 
 /* ==================================
@@ -361,6 +395,8 @@ html, body {
   box-shadow: 
     -1px -1px 10px #906D4D,
     1px 1px 10px #906D4D;
+
+    transition: 2s;
 }
 
 .player-album-image#hte {
@@ -374,20 +410,28 @@ html, body {
     inset 0 -33px 50px 17px #906D4D,
     inset 0 0 50px 17px #906D4D;
 
+    transition: 2s;
+
   width: 390px;
   height: 496px;
 }
 
 .player-title#hte {
   color: #dbc0a7;
+
+  transition: 2s;
 }
 
 .player-artist-name#hte {
   color: #5f4023;
+
+  transition: 2s;
 }
 
 .time#hte {
   color: #dbc0a7;
+
+  transition: 2s;
 }
 
 /* ==================================
@@ -398,6 +442,8 @@ html, body {
   box-shadow: 
     -1px -1px 10px #6ADB7F,
     1px 1px 10px #6ADB7F;
+
+  transition: 2s;
 }
 
 .player-album-image#sot {
@@ -413,19 +459,26 @@ html, body {
 
   width: 390px;
   height: 496px;
-  
+
+  transition: 2s;
 }
 
 .player-title#sot {
   color: #ececec;
+  
+  transition: 2s;
 }
 
 .player-artist-name#sot {
   color: #CDCDCD;
+
+  transition: 2s;
 }
 
 .time#sot {
   color: #CDCDCD;
+
+  transition: 2s;
 }
 
 /* ==================================
@@ -436,7 +489,9 @@ html, body {
   box-shadow: 
     -1px -1px 10px #e00029ce,
     1px 1px 10px #e00029ce;
-}
+
+  transition: 2s;
+  }
 .player-album-image#starboy {
   background-position: center;
   background-repeat: no-repeat;
@@ -450,18 +505,26 @@ html, body {
   
   width: 390px;
   height: 496px;
+
+  transition: 2s;
 }
 
 .player-title#starboy {
   color: #ececec;
+
+  transition: 2s;
 }
 
 .player-artist-name#starboy {
   color: #CDCDCD;
+
+  transition: 2s;
 }
 
 .time#starboy {
   color: #CDCDCD;
+
+  transition: 2s;
 }
 
 /* ==================================
@@ -472,6 +535,8 @@ html, body {
   box-shadow: 
     -1px -1px 10px #91031d,
     1px 1px 10px #91031d;
+
+  transition: 2s;
 }
 
 .player-album-image#nfr {
@@ -488,18 +553,26 @@ html, body {
 
   width: 390px;
   height: 496px;
+
+  transition: 2s;
 }
 
 .player-title#nfr {
   color: #ececec;
+
+  transition: 2s;
 }
 
 .player-artist-name#nfr {
   color: #CDCDCD;
+
+  transition: 2s;
 }
 
 .time#nfr {
   color: #CDCDCD;
+
+  transition: 2s;
 }
       
 /* ==================================
@@ -510,6 +583,8 @@ html, body {
   box-shadow: 
     -1px -1px 10px #0a43a0,
     1px 1px 10px #0a48ad;
+
+  transition: 2s;
 }
 
 .player-album-image#melodrama {
@@ -525,16 +600,24 @@ html, body {
   
   width: 390px;
   height: 496px;
+
+  transition: 2s;
 }
 
 .player-title#melodrama {
   color: #ececec;
+
+  transition: 2s;
 }
 
 .player-artist-name#melodrama {
   color: #CDCDCD;
+
+  transition: 2s;
 }
 
 .time#melodrama {
   color: #CDCDCD;
+
+  transition: 2s;
 }
